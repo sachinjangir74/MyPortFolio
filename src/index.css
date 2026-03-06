@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #6366f1; /* Indigo 500 */
+  --color-primary-hover: #4f46e5;
+  --color-background-dark: #0f172a; /* Slate 900 */
+  --color-background-light: #f8fafc; /* Slate 50 */
+  
+  --font-sans: "Inter", "Segoe UI", Arial, sans-serif;
+}
+
+/* Base styles for global elements */
+@layer base {
+  :root {
+    --text-primary: #ffffff;
+    --text-secondary: #cbd5e1; /* slate-300 */
+    --text-muted: #94a3b8; /* slate-400 */
+    --bg-primary: #0f172a;
+    --card-bg: rgba(30, 41, 59, 0.7); /* Slate 800 with opacity for glassmorphism */
+    --card-border: rgba(255, 255, 255, 0.1);
+  }
+
+  /* Light mode toggling logic */
+  .light {
+    --text-primary: #0f172a; /* Slate 900 */
+    --text-secondary: #334155; /* slate-700 */
+    --text-muted: #475569; /* slate-600 */
+    --bg-primary: #f8fafc; /* Slate 50 */
+    --card-bg: rgba(255, 255, 255, 0.8); /* Noticeable card contrast */
+    --card-border: rgba(0, 0, 0, 0.1);
+  }
+
+  html, body {
+    @apply w-full m-0 p-0 overflow-x-hidden font-sans;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .glass-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+  
+  .btn-primary {
+    @apply px-6 py-2 rounded-full font-medium transition-all duration-300 transform hover:scale-105 active:scale-95;
+    background-color: var(--color-primary);
+    color: white;
+  }
+  
+  .btn-secondary {
+    @apply px-6 py-2 rounded-full font-medium transition-all duration-300 transform hover:scale-105 active:scale-95;
+    background: transparent;
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+  }
+
+  .btn-secondary:hover {
+    background-color: var(--color-primary);
+    color: white;
+  }
+}
