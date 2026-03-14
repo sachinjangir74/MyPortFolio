@@ -81,7 +81,7 @@ function Contact() {
                 <div className="w-12 h-12 bg-[var(--color-primary)]/10 text-[var(--color-primary)] rounded-full flex items-center justify-center text-xl">📧</div>
                 <div>
                   <p className="text-sm text-[var(--text-muted)] font-semibold mb-1">Email</p>
-                  <p className="font-medium text-[var(--text-primary)] hover:text-[var(--color-primary)] transition-colors"><a href="mailto:sachinjangir7427@gmail.com">sachinjangir7427@gmail.com</a></p>
+                  <p className="font-medium text-[var(--text-primary)] hover:text-[var(--color-primary)] transition-colors"><a href="mailto:hello@example.com">hello@example.com</a></p>
                 </div>
               </div>
               
@@ -89,7 +89,7 @@ function Contact() {
                 <div className="w-12 h-12 bg-[var(--color-primary)]/10 text-[var(--color-primary)] rounded-full flex items-center justify-center text-xl">📞</div>
                 <div>
                   <p className="text-sm text-[var(--text-muted)] font-semibold mb-1">Phone</p>
-                  <p className="font-medium text-[var(--text-primary)]">+91 7427809074</p>
+                  <p className="font-medium text-[var(--text-primary)]">+1 (555) 123-4567</p>
                 </div>
               </div>
 

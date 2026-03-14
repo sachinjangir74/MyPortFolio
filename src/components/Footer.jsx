@@ -27,7 +27,7 @@ function Footer() {
           </a>
 
           <a 
-            href="mailto:sachin@example.com"
+            href="mailto:hello@example.com"
             className="text-[var(--text-muted)] font-medium hover:text-[var(--color-primary)] transition-colors transform hover:-translate-y-1"
           >
             Email
