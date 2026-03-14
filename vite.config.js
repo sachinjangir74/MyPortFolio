@@ -9,7 +9,6 @@ export default defineConfig({
     tailwindcss(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['resume.pdf'],
       manifest: {
         name: 'Sachin Jangir | Software Engineer',
         short_name: 'Sachin',
