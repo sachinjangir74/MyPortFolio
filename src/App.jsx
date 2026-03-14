@@ -1,19 +1,24 @@
-
 import { motion, useScroll } from "framer-motion";
+import { lazy, Suspense } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import About from "./components/About";
-import Education from "./components/Education";
-import Internships from "./components/Internships";
-import Certificates from "./components/Certificates";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
 
+// Lazy load components below the fold for better performance
+const About = lazy(() => import("./components/About"));
+const Education = lazy(() => import("./components/Education"));
+const Internships = lazy(() => import("./components/Internships"));
+const Certificates = lazy(() => import("./components/Certificates"));
+const Skills = lazy(() => import("./components/Skills"));
+const Projects = lazy(() => import("./components/Projects"));
+const Contact = lazy(() => import("./components/Contact"));
+const Footer = lazy(() => import("./components/Footer"));
 
-
-
+// A simple loading skeleton for Suspense fallback
+const FallbackLoader = () => (
+  <div className="w-full h-screen flex items-center justify-center bg-[var(--bg-primary)]">
+    <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-[var(--color-primary)]"></div>
+  </div>
+);
 
 function App() {
   const { scrollYProgress } = useScroll();
@@ -25,16 +30,21 @@ function App() {
         style={{ scaleX: scrollYProgress }}
       />
       
+      {/* Kept out of suspense so they render immediately */}
       <Navbar />
       <Hero />
-      <About />
-      <Education />
-      <Internships />
-      <Certificates />
-      <Skills />
-      <Projects />
-      <Contact />
-      <Footer />
+      
+      {/* Suspense boundary for lazily loaded sections */}
+      <Suspense fallback={<FallbackLoader />}>
+        <About />
+        <Education />
+        <Internships />
+        <Certificates />
+        <Skills />
+        <Projects />
+        <Contact />
+        <Footer />
+      </Suspense>
     </div>
   );
 }
