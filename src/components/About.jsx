@@ -9,12 +9,12 @@ function About() {
     },
     {
       title: "Projects",
-      subtitle: "Multiple Web Projects",
+      subtitle: "Full-Stack & Interactive Apps",
       icon: "💻",
     },
     {
       title: "Skills",
-      subtitle: "React, JS, HTML, CSS",
+      subtitle: "React, Node.js, MongoDB, Express",
       icon: "⚙️",
     }
   ];
@@ -40,10 +40,10 @@ function About() {
             {/* Left Content */}
             <div className="flex-1 space-y-6 text-lg text-[var(--text-secondary)]">
               <p className="leading-relaxed">
-                I am a Software Developer with a strong foundation in building responsive front-end interfaces using HTML, CSS, JavaScript, Bootstrap, and React.js.
+                I am a Full-Stack Developer with hands-on experience building scalable web applications, real-time systems, and interactive data visualization platforms using the MERN stack and modern frontend technologies.
               </p>
               <p className="leading-relaxed">
-                I have a strong understanding of Data Structures and Algorithms using Java and Object-Oriented Programming (OOPs). Proficient in version control using Git and GitHub, I focus on writing clean, efficient code while continuously learning modern development technologies to provide engaging, pixel-perfect user experiences.
+                I focus on crafting production-ready systems with secure architecture, optimized performance, and seamless user experiences. With strong foundations in Data Structures, Algorithms using Java, and OOPs, I write clean, efficient, and maintainable code — continuously pushing boundaries with modern development practices.
               </p>
             </div>
 

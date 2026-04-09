@@ -8,31 +8,31 @@ function Projects() {
 
   const projects = [
     {
-      title: "Seren - Mental Health ChatBot Companion",
-      desc: "A non-judgmental platform where patients feel safe to share their emotions and thoughts. Allows patients to communicate about their symptoms via text-to-text. Offers empathetic, confidential support for mental health challenges.",
-      image: "https://via.placeholder.com/600x400",
+      title: "SEREN – Mental Health Platform",
+      desc: "Architected a full-stack platform enabling real-time therapist-user communication. Secured user authentication using JWT and role-based access control mechanisms. Streamlined backend operations by designing efficient RESTful APIs. Strengthened application security using Helmet, rate limiting, and input sanitization.",
+      image: "/images/seren.png",
       liveLink: "#",
       githubLink: "#",
-      tags: ["React", "API", "Frontend"],
+      tags: ["React", "Node.js", "Express", "MongoDB", "Socket.io"],
+      category: "Fullstack"
+    },
+    {
+      title: "3D Bioprinting Scaffold Platform",
+      desc: "Engineered an interactive 3D visualization system for biomimetic scaffold modeling. Enabled real-time rendering of complex datasets using Plotly.js. Simulated layer-wise bioprinting through a custom G-code generation module. Refined rendering performance for smooth and responsive user interaction.",
+      image: "/images/3d-bioprinting.png",
+      liveLink: "#",
+      githubLink: "#",
+      tags: ["React", "Plotly.js", "Tailwind CSS", "Framer Motion"],
       category: "Frontend"
     },
     {
-      title: "Chat Application",
-      desc: "Real-time chat application using Node.js, Socket.io, and MongoDB.",
-      image: "https://via.placeholder.com/600x400",
+      title: "Personal Portfolio Website",
+      desc: "Crafted a responsive portfolio leveraging modular component architecture. Enhanced user engagement through dynamic animations and UI transitions. Boosted performance and accessibility via frontend optimization techniques.",
+      image: "/images/portfolio.png",
       liveLink: "#",
       githubLink: "#",
-      tags: ["Node.js", "Socket.io", "MongoDB", "React"],
-      category: "Fullstack"
-    },
-    {
-      title: "Appointment Booking System",
-      desc: "Full-stack web app with login, booking, and admin dashboard.",
-      image: "https://via.placeholder.com/600x400",
-      liveLink: "#",
-      githubLink: "#",
-      tags: ["MERN Stack", "Express", "JWT"],
-      category: "Fullstack"
+      tags: ["React", "Tailwind CSS", "Framer Motion"],
+      category: "Frontend"
     }
   ];
 

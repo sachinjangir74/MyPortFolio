@@ -39,7 +39,7 @@ function App() {
         <About />
         <Education />
         <Internships />
-        <Certificates />
+        {/* <Certificates /> */}
         <Skills />
         <Projects />
         <Contact />

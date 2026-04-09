@@ -41,7 +41,7 @@ function Navbar() {
     { name: "Education", href: "#education" },
     { name: "Internships", href: "#internships" },
     { name: "Projects", href: "#projects" },
-    { name: "Certificates", href: "#certificates" },
+    // { name: "Certificates", href: "#certificates" },
     { name: "Skills", href: "#skills" },
     { name: "Contact", href: "#contact" },
   ];
@@ -52,7 +52,7 @@ function Navbar() {
 
         {/* Logo */}
         <h2 className="text-2xl font-bold tracking-tight text-[var(--text-primary)] hover:text-[var(--color-primary)] transition-colors">
-          <a href="#home">Sachin.dev</a>
+          <a href="#home">MyPortfolio</a>
         </h2>
 
         {/* Desktop Menu */}

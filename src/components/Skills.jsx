@@ -2,12 +2,11 @@ import { motion } from "framer-motion";
 
 function Skills() {
   const skills = [
-    { name: "React.js", level: 90, color: "bg-[#61DAFB]" },
-    { name: "JavaScript / HTML / CSS", level: 95, color: "bg-[#F7DF1E]" },
-    { name: "Java (DSA & OOPs)", level: 85, color: "bg-[#E34F26]" },
-    { name: "Bootstrap & Tailwind CSS", level: 90, color: "bg-[#7952B3]" },
-    { name: "MySQL", level: 75, color: "bg-[#4479A1]" },
-    { name: "Git & GitHub", level: 85, color: "bg-[#F05032]" }
+    { name: "Frontend (React, Vite, Tailwind, Framer)", level: 95, color: "bg-[#61DAFB]" },
+    { name: "Backend (Node.js, Express, REST, Socket.io)", level: 90, color: "bg-[#68A063]" },
+    { name: "Databases (MongoDB, MySQL)", level: 85, color: "bg-[#4DB33D]" },
+    { name: "Languages (JS, HTML/CSS, Java DSA/OOPs)", level: 90, color: "bg-[#F7DF1E]" },
+    { name: "Tools (Git, VS Code, Postman, Antigravity, Copilot)", level: 85, color: "bg-[#E34F26]" }
   ];
 
   return (

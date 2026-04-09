@@ -4,9 +4,9 @@ function Internships() {
   const experiences = [
     {
       role: "Frontend Web Development Intern",
-      company: "MotionCut - Lucknow, UP (IN)",
+      company: "Motion Cut [Lucknow, UP] Remote",
       duration: "Jan 2025 - Feb 2025",
-      work: "Worked on building and improving responsive frontend web pages, contributing to multiple UI components while ensuring consistent design across devices and browsers. Collaborated regularly with mentors and teammates to complete weekly frontend tasks, identify UI issues, and fix bugs through hands-on debugging.",
+      work: "Engineered responsive UI components, ensuring seamless performance across devices. Resolved UI inconsistencies and rendering issues, enhancing application stability. Accelerated feature delivery by efficiently implementing frontend modules within deadlines.",
     }
   ];
 
@@ -32,7 +32,7 @@ function Internships() {
           />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className={`grid grid-cols-1 ${experiences.length === 1 ? 'md:grid-cols-1 max-w-2xl' : 'md:grid-cols-2 max-w-4xl'} gap-8 mx-auto`}>
           {experiences.map((exp, index) => (
             <motion.div
               key={index}

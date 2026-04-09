@@ -47,13 +47,11 @@ function Hero() {
             </motion.h1>
             
             <motion.h2 variants={itemVariants} className="text-2xl md:text-3xl font-medium text-[var(--text-secondary)] mb-6">
-              Frontend Developer
+              Full-Stack Developer
             </motion.h2>
 
             <motion.p variants={itemVariants} className="text-lg text-[var(--text-muted)] max-w-2xl mx-auto lg:mx-0 mb-10 leading-relaxed">
-              I am a passionate Frontend Developer specializing in
-              building modern, responsive, and user-friendly web
-              applications using React.js and modern Web Technologies.
+              Full-stack developer specializing in scalable web applications, real-time systems, and interactive data visualization. Experienced in building production-ready systems with optimized performance, secure architecture, and seamless user experience.
             </motion.p>
 
             <motion.div variants={itemVariants} className="flex flex-wrap justify-center lg:justify-start gap-4">
